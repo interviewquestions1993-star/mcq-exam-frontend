@@ -623,7 +623,7 @@ export class PersistedMcqsComponent implements OnInit {
 
   private loadPersistedMCQs() {
     this.isLoading = true;
-    const baseUrl = (window as any).__API_URL__ || 'https://mcq-exam-backend-new-v1.onrender.com';
+    const baseUrl = (window as any).__API_URL__ || 'https://mcq-backend-new-v2.onrender.com';
     const apiUrl = `${baseUrl}/api/mcq/history`;
 
     this.http.get<PersistedMCQ[]>(apiUrl).subscribe(

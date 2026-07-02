@@ -41,7 +41,7 @@ export class MCQService {
   constructor(private http: HttpClient) {}
 
   private getBaseUrl(): string {
-    return (window as any).__API_URL__ || 'https://mcq-exam-backend-new-v1.onrender.com';
+    return (window as any).__API_URL__ || 'https://mcq-backend-new-v2.onrender.com';
   }
 
   private getApiUrl(): string {

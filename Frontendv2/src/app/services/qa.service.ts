@@ -76,7 +76,7 @@ export class QAService {
   constructor(private http: HttpClient) {}
 
   private getBaseUrl(): string {
-    return (window as any).__API_URL__ || 'http://localhost:8000';
+    return (window as any).__API_URL__ || 'https://mcq-backend-new-v2.onrender.com';
   }
 
   getQuestions(payload: any): Observable<QAResponse> {
